@@ -1,4 +1,7 @@
 package com.pluralsight.repository;
 
-public class ReleaseRepository {
+import com.pluralsight.entity.Release;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ReleaseRepository extends CrudRepository<Release, Long> {
 }
