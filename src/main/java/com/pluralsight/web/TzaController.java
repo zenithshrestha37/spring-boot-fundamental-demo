@@ -46,7 +46,7 @@ public class TzaController {
         return new ResponseEntity<List<Application>>(list, HttpStatus.OK);
     }
 
-    @GetMapping("/application/{id}")
+    @GetMapping("/application/{id}") // anytime it is a get request, with application {id} typed in it maps to getApplication method and verifies the path of the id
     public ResponseEntity<Application> getApplication(@PathVariable("id") long id) {
         try {
             return new ResponseEntity<Application>(applicationService.findApplication(id),
