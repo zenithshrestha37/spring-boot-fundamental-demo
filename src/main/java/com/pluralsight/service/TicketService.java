@@ -1,7 +1,11 @@
 package com.pluralsight.service;
 
+import com.pluralsight.entity.Ticket;
+
+import java.util.List;
+
 public interface TicketService {
-    java.lang.Object listTickets();
+    List<Ticket> listTickets();
 }
 
 

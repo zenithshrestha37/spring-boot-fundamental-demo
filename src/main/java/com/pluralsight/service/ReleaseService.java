@@ -1,7 +1,11 @@
 package com.pluralsight.service;
 
+import com.pluralsight.entity.Release;
+
+import java.util.List;
+
 public interface ReleaseService {
-    java.lang.Object listReleases();
+    List<Release> listReleases();
 }
 
 
